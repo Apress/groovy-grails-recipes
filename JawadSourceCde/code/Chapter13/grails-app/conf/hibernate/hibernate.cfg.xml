@@ -1,0 +1,8 @@
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <mapping package="com.apress.groovygrailsrecipes.entities"/>
+    <mapping class="com.apress.groovygrailsrecipes.entities.User"/>
+  </session-factory>
+</hibernate-configuration>

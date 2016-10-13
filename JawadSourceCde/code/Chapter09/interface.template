@@ -1,0 +1,12 @@
+<%
+def getShortName = { className ->
+className.substring(className.lastIndexOf(".") + 1, className.length())
+}
+%>
+class <%= getShortName(interfaceToImplement.name) %>Impl implements $interfaceToImplement.name {
+<% for(method in interfaceToImplement.methods){ %>
+  public ${method.returnType} ${method.name}(<% method.parameterTypes.eachWithIndex {type,index -> %>${getShortName(type.name)} arg${index} ${(index == method.parameterTypes.length - 1)  ? '' : ','}<%}%>)
+      {
+       //Override
+      } 
+<%}%>}

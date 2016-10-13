@@ -1,0 +1,2 @@
+f = new File("test.txt")
+f.eachLine{println it}

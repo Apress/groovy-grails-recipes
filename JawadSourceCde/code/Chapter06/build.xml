@@ -1,0 +1,10 @@
+<project name="compileJavaClass" default="compile">
+  <target name ="compile">
+    <echo file="HelloWorld.java">
+      class HelloWorld { public static void main(String[] args) { System.out.println("Hello World"); }}
+    </echo>
+    <javac srcdir="." includes="HelloWorld.java" fork="true" />
+    <java classpath="." classname="HelloWorld" fork="true" />
+    <echo>Done</echo>
+  </target>
+</project>

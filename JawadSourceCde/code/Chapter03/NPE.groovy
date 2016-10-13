@@ -1,0 +1,1 @@
+assert 3 + null == 3

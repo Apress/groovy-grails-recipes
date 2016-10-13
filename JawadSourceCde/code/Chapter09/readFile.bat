@@ -1,0 +1,1 @@
+groovy -pe "line.toUpperCase()" text.txt > textUpper.txt

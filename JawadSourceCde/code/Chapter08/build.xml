@@ -1,0 +1,32 @@
+<project name="compileJavaClass" default="test">
+<path id="compile.classpath">
+    <fileset dir="C:\groovy-1.5.4\lib">
+      <include name="**/*.jar" />
+    </fileset>    
+</path>
+<path id="test.classpath">
+      <fileset dir="C:\groovy-1.5.4\lib">
+        <include name="**/*.jar" />
+      </fileset>  
+      <fileset dir=".">
+          <include name="lib/app.jar" />
+      </fileset>  
+</path>
+<taskdef name="groovyc"
+         classname="org.codehaus.groovy.ant.Groovyc"
+         classpathref="compile.classpath"/>
+  <target name ="compile">    
+    <javac srcdir="src" classpathref="compile.classpath" destdir="src"/>
+    <groovyc srcdir="src" destdir="src"  stacktrace="true" />
+    <jar destfile="lib/app.jar" basedir="src"/>
+  </target>
+  <target name ="test" depends="compile">   
+    <junit printsummary="yes" haltonerror="no" haltonfailure="no" fork="no">
+      <formatter type="plain" usefile="false" />
+        <batchtest>
+      <fileset dir="src" includes="**/*Test.class" />
+    </batchtest>
+    <classpath refid="test.classpath" />
+  </junit>
+  </target>
+</project>

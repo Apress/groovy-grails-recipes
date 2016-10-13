@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Topic List</title>
+        <link rel="stylesheet" href="/Chapter15/css/main.css" />
+        <link rel="shortcut icon" href="/Chapter15/images/favicon.ico" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="layout" content="main" />
+        <script type="text/javascript" src="/Chapter15/js/application.js"></script>
+				
+    </head>
+    <body>
+        <div id="spinner" class="spinner" style="display:none;">
+            <img src="/Chapter15/images/spinner.gif" alt="Spinner" />
+        </div>	
+        <div class="logo"><img src="/Chapter15/images/grails_logo.jpg" alt="Grails" /></div>	
+        <div class="nav">
+            <span class="menuButton"><a class="home" href="/Chapter15">Home</a></span>
+            <span class="menuButton"><a href="/Chapter15/topic/create" class="create">New Topic</a></span>
+        </div>
+        <div class="body">
+            <h1>Topic List</h1>
+            
+            <div class="message">Topic 2 deleted</div>
+            
+            <div class="list">
+                <table>
+                    <thead>
+                        <tr>
+                        
+                   	        <th class="sortable" ><a href="/Chapter15/topic/list?sort=id&amp;order=asc">Id</a></th>
+                        
+                   	        <th class="sortable" ><a href="/Chapter15/topic/list?sort=date&amp;order=asc">Date</a></th>
+                        
+                   	        <th>Forum</th>
+                   	    
+                   	        <th class="sortable" ><a href="/Chapter15/topic/list?sort=message&amp;order=asc">Message</a></th>
+                        
+                   	        <th class="sortable" ><a href="/Chapter15/topic/list?sort=subject&amp;order=asc">Subject</a></th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                        <tr class="odd">
+                        
+                            <td><a href="/Chapter15/topic/show/1">1</a></td>
+                        
+                            <td>2008-11-25 14:19:00.0</td>
+                        
+                            <td>Forum : 1</td>
+                        
+                            <td>Message body</td>
+                        
+                            <td>sticky: Getting started with Groovy</td>
+                        
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+            <div class="paginateButtons">
+                
+            </div>
+        </div>		
+    </body>	
+</html>

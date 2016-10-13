@@ -1,0 +1,1 @@
+assert "Test_String".substring(0,4) == "Test"

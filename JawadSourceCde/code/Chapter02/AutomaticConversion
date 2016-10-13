@@ -1,0 +1,7 @@
+int var = 1
+var = 2.7
+assert var == 2
+assert var.class in Integer
+var = '1' as char
+assert var == 49
+assert var.class in Integer

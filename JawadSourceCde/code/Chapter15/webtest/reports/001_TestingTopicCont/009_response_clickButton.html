@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Show Topic</title>
+        <link rel="stylesheet" href="/Chapter15/css/main.css" />
+        <link rel="shortcut icon" href="/Chapter15/images/favicon.ico" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="layout" content="main" />
+        <script type="text/javascript" src="/Chapter15/js/application.js"></script>
+				
+    </head>
+    <body>
+        <div id="spinner" class="spinner" style="display:none;">
+            <img src="/Chapter15/images/spinner.gif" alt="Spinner" />
+        </div>	
+        <div class="logo"><img src="/Chapter15/images/grails_logo.jpg" alt="Grails" /></div>	
+        <div class="nav">
+            <span class="menuButton"><a class="home" href="/Chapter15">Home</a></span>
+            <span class="menuButton"><a href="/Chapter15/topic/list" class="list">Topic List</a></span>
+            <span class="menuButton"><a href="/Chapter15/topic/create" class="create">New Topic</a></span>
+        </div>
+        <div class="body">
+            <h1>Show Topic</h1>
+            
+            <div class="dialog">
+                <table>
+                    <tbody>
+
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Id:</td>
+                            
+                            <td valign="top" class="value">2</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Date:</td>
+                            
+                            <td valign="top" class="value">2008-11-25 14:19:00.0</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Forum:</td>
+                            
+                            <td valign="top" class="value"><a href="/Chapter15/forum/show/1">Forum : 1</a></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Message:</td>
+                            
+                            <td valign="top" class="value">Message body</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Posts:</td>
+                            
+                            <td  valign="top" style="text-align:left;" class="value">
+                                <ul>
+                                
+                                </ul>
+                            </td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Subject:</td>
+                            
+                            <td valign="top" class="value">Groovy JDBC question</td>
+                            
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+            <div class="buttons">
+                <form action="/Chapter15/topic" method="post" >
+                    <input type="hidden" name="id" value="2" />
+                    <span class="button"><input type="submit" name="_action_Edit" value="Edit" class="edit" /></span>
+                    <span class="button"><input type="submit" name="_action_Delete" value="Delete" class="delete" onclick="return confirm('Are you sure?');" /></span>
+                </form>
+            </div>
+        </div>		
+    </body>	
+</html>

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Forum List</title>
+        <link rel="stylesheet" href="/Chapter15/css/main.css" />
+        <link rel="shortcut icon" href="/Chapter15/images/favicon.ico" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="layout" content="main" />
+        <script type="text/javascript" src="/Chapter15/js/application.js"></script>
+				
+    </head>
+    <body>
+        <div id="spinner" class="spinner" style="display:none;">
+            <img src="/Chapter15/images/spinner.gif" alt="Spinner" />
+        </div>	
+        <div class="logo"><img src="/Chapter15/images/grails_logo.jpg" alt="Grails" /></div>	
+        <div class="nav">
+            <span class="menuButton"><a class="home" href="/Chapter15">Home</a></span>
+            <span class="menuButton"><a href="/Chapter15/forum/create" class="create">New Forum</a></span>
+        </div>
+        <div class="body">
+            <h1>Forum List</h1>
+            
+            <div class="list">
+                <table>
+                    <thead>
+                        <tr>
+                        
+                   	        <th class="sortable" ><a href="/Chapter15/forum/list?sort=id&amp;order=asc">Id</a></th>
+                        
+                   	        <th class="sortable" ><a href="/Chapter15/forum/list?sort=description&amp;order=asc">Description</a></th>
+                        
+                   	        <th class="sortable" ><a href="/Chapter15/forum/list?sort=lastPost&amp;order=asc">Last Post</a></th>
+                        
+                   	        <th class="sortable" ><a href="/Chapter15/forum/list?sort=name&amp;order=asc">Name</a></th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            </div>
+            <div class="paginateButtons">
+                
+            </div>
+        </div>		
+    </body>	
+</html>

@@ -1,0 +1,9 @@
+def builder = new groovy.xml.MarkupBuilder()
+builder.authors{
+  author (name: 'Bashar AbdulJawad'){
+     book (title: 'Groovy and Grails Recipes',edition:1)
+  }
+  author (name: 'Graeme Rocher'){
+    book (title: 'The Definitive Guide to Grails', edition:2)
+  }
+}

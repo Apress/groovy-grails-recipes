@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overview Implementation-Title="Canoo Webtest" Implementation-Version="R_1708">
+	<folder name="001_TestingTopicCont">
+<summary starttime='Tue Nov 25 14:18:54 MST 2008' name='Testing TopicController delete action' successful='yes' duration='12018'><topsteps total='25' failed='0' notexecuted='0' successful='25'></topsteps><steps total='25' failed='0' notexecuted='0' successful='25'></steps><timingprofile average='1027' number='11'><range to='1' from='0' number='7'></range><range to='3' from='1' number='3'></range><range to='5' from='3' number='1'></range><range to='10' from='5' number='0'></range><range to='30' from='10' number='0'></range><range from='30' number='0'></range></timingprofile></summary>
+</folder>
+
+</overview>

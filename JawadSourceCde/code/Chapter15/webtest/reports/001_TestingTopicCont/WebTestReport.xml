@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<summary Implementation-Title="Canoo Webtest" Implementation-Version="R_1708">
+    <testresult endtime="Tue Nov 25 14:19:06 MST 2008" location=": "
+        starttime="Tue Nov 25 14:18:54 MST 2008" successful="yes" testspecname="Testing TopicController delete action">
+        <config>
+            <parameter name="protocol" value="http"/>
+            <parameter name="summary" value="yes"/>
+            <parameter name="saveresponse" value="yes"/>
+            <parameter name="timeout" value="300"/>
+            <parameter name="haltonerror" value="no"/>
+            <parameter name="resultfile" value="WebTestReport.xml"/>
+            <parameter name="port" value="9000"/>
+            <parameter name="failureproperty" value="webTestFailure"/>
+            <parameter name="showhtmlparseroutput" value="yes"/>
+            <parameter name="autorefresh" value="false"/>
+            <parameter name="resultpath" value="/media/KINGSTON_/code.rar_FILES/code/Chapter15/webtest/reports"/>
+            <parameter name="host" value="127.0.0.1"/>
+            <parameter name="haltonfailure" value="no"/>
+            <parameter name="basepath" value="Chapter15"/>
+            <parameter name="saveprefix" value="response"/>
+            <parameter name="errorproperty" value="webTestError"/>
+        </config>
+        <results>
+            <step duration="3958" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://127.0.0.1:9000/Chapter15/forum"/>
+                <parameter name="nested text" value="forum"/>
+                <resultFile name="001_response_invoke.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/forum/list">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/forum/list">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/forum/list">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/forum/list">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/forum/list">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/forum/list">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step duration="3" result="completed" taskName="verifyText">
+                <parameter name="nested text" value="Home"/>
+            </step>
+            <step duration="1130" result="completed" taskName="clickLink">
+                <parameter name="nested text" value="New Forum"/>
+                <resultFile name="002_response_clickLink.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/forum/create">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/forum/create">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/forum/create">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/forum/create">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/forum/create">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/forum/create">Missing attribute name.</error>
+                    <error col="100" line="33" url="http://127.0.0.1:9000/Chapter15/forum/create">Missing attribute name.</error>
+                    <error col="89" line="42" url="http://127.0.0.1:9000/Chapter15/forum/create">Missing attribute name.</error>
+                    <error col="86" line="623" url="http://127.0.0.1:9000/Chapter15/forum/create">Missing attribute name.</error>
+                    <error col="91" line="631" url="http://127.0.0.1:9000/Chapter15/forum/create">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step duration="1" result="completed" taskName="verifyText">
+                <parameter name="nested text" value="Create Forum"/>
+            </step>
+            <step duration="38" result="completed" taskName="setInputField">
+                <parameter name="name" value="name"/>
+                <parameter name="nested text" value="Groovy"/>
+            </step>
+            <step duration="4" result="completed" taskName="setInputField">
+                <parameter name="name" value="description"/>
+                <parameter name="nested text" value="General Groovy Discussion"/>
+            </step>
+            <step duration="750" result="completed" taskName="clickButton">
+                <parameter name="nested text" value="Create"/>
+                <resultFile name="003_response_clickButton.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/forum/show/1">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/forum/show/1">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/forum/show/1">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/forum/show/1">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/forum/show/1">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/forum/show/1">Missing attribute name.</error>
+                    <error col="62" line="73" url="http://127.0.0.1:9000/Chapter15/forum/show/1">Missing attribute name.</error>
+                    <error col="109" line="74" url="http://127.0.0.1:9000/Chapter15/forum/show/1">Missing attribute name.</error>
+                    <error col="158" line="75" url="http://127.0.0.1:9000/Chapter15/forum/show/1">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step description="Show Forum page" duration="0" result="completed" taskName="verifyText">
+                <parameter name="nested text" value="Show Forum"/>
+            </step>
+            <step description="Edit to add new topics" duration="1105" result="completed" taskName="clickButton">
+                <parameter name="nested text" value="Edit"/>
+                <resultFile name="004_response_clickButton.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="58" line="25" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="125" line="35" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="89" line="44" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="92" line="625" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="113" line="645" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                    <error col="158" line="646" url="http://127.0.0.1:9000/Chapter15/forum">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step duration="1553" result="completed" taskName="clickLink">
+                <parameter name="nested text" value="Add Topic"/>
+                <resultFile name="005_response_clickLink.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/topic/create?forum.id=1">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/topic/create?forum.id=1">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/topic/create?forum.id=1">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/topic/create?forum.id=1">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/topic/create?forum.id=1">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/topic/create?forum.id=1">Missing attribute name.</error>
+                    <error col="85" line="33" url="http://127.0.0.1:9000/Chapter15/topic/create?forum.id=1">Missing attribute name.</error>
+                    <error col="92" line="630" url="http://127.0.0.1:9000/Chapter15/topic/create?forum.id=1">Missing attribute name.</error>
+                    <error col="92" line="639" url="http://127.0.0.1:9000/Chapter15/topic/create?forum.id=1">Missing attribute name.</error>
+                    <error col="91" line="647" url="http://127.0.0.1:9000/Chapter15/topic/create?forum.id=1">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step duration="21" result="completed" taskName="setInputField">
+                <parameter name="name" value="subject"/>
+                <parameter name="nested text" value="sticky: Getting started with Groovy"/>
+            </step>
+            <step duration="1" result="completed" taskName="setInputField">
+                <parameter name="name" value="message"/>
+                <parameter name="nested text" value="Message body"/>
+            </step>
+            <step duration="495" result="completed" taskName="clickButton">
+                <parameter name="nested text" value="Create"/>
+                <resultFile name="006_response_clickButton.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/topic/show/1">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/topic/show/1">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/topic/show/1">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/topic/show/1">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/topic/show/1">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/topic/show/1">Missing attribute name.</error>
+                    <error col="62" line="80" url="http://127.0.0.1:9000/Chapter15/topic/show/1">Missing attribute name.</error>
+                    <error col="109" line="81" url="http://127.0.0.1:9000/Chapter15/topic/show/1">Missing attribute name.</error>
+                    <error col="158" line="82" url="http://127.0.0.1:9000/Chapter15/topic/show/1">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step description="Show Topic page" duration="1" result="completed" taskName="verifyText">
+                <parameter name="nested text" value="Show Topic"/>
+            </step>
+            <step description="Attempting to delete a sticky topic" duration="413"
+                result="completed" taskName="clickButton">
+                <parameter name="nested text" value="Delete"/>
+                <resultFile name="007_response_clickButton.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/topic/list;jsessionid=90zwcn0umq35">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/topic/list;jsessionid=90zwcn0umq35">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/topic/list;jsessionid=90zwcn0umq35">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/topic/list;jsessionid=90zwcn0umq35">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/topic/list;jsessionid=90zwcn0umq35">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/topic/list;jsessionid=90zwcn0umq35">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step duration="1" result="completed" taskName="verifyText">
+                <parameter name="nested text" value="Sorry, you can't delete sticky topics"/>
+            </step>
+            <step description="Create a non sticky topic" duration="968" result="completed" taskName="clickLink">
+                <parameter name="nested text" value="New Topic"/>
+                <resultFile name="008_response_clickLink.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/topic/create">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/topic/create">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/topic/create">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/topic/create">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/topic/create">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/topic/create">Missing attribute name.</error>
+                    <error col="85" line="33" url="http://127.0.0.1:9000/Chapter15/topic/create">Missing attribute name.</error>
+                    <error col="92" line="630" url="http://127.0.0.1:9000/Chapter15/topic/create">Missing attribute name.</error>
+                    <error col="92" line="639" url="http://127.0.0.1:9000/Chapter15/topic/create">Missing attribute name.</error>
+                    <error col="91" line="647" url="http://127.0.0.1:9000/Chapter15/topic/create">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step duration="633" result="completed" taskName="setInputField">
+                <parameter name="name" value="subject"/>
+                <parameter name="nested text" value="Groovy JDBC question"/>
+            </step>
+            <step duration="1" result="completed" taskName="setInputField">
+                <parameter name="name" value="message"/>
+                <parameter name="nested text" value="Message body"/>
+            </step>
+            <step duration="297" result="completed" taskName="clickButton">
+                <parameter name="nested text" value="Create"/>
+                <resultFile name="009_response_clickButton.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/topic/show/2">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/topic/show/2">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/topic/show/2">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/topic/show/2">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/topic/show/2">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/topic/show/2">Missing attribute name.</error>
+                    <error col="62" line="80" url="http://127.0.0.1:9000/Chapter15/topic/show/2">Missing attribute name.</error>
+                    <error col="109" line="81" url="http://127.0.0.1:9000/Chapter15/topic/show/2">Missing attribute name.</error>
+                    <error col="158" line="82" url="http://127.0.0.1:9000/Chapter15/topic/show/2">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step description="Show Topic page" duration="1" result="completed" taskName="verifyText">
+                <parameter name="nested text" value="Show Topic"/>
+            </step>
+            <step description="Attempting to delete a non sticky topic" duration="391"
+                result="completed" taskName="clickButton">
+                <parameter name="nested text" value="Delete"/>
+                <resultFile name="010_response_clickButton.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step duration="13" result="completed" taskName="verifyXPath">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*Topic.*deleted.*"/>
+                <parameter name="xpath" value="//div[@class='message']"/>
+            </step>
+            <step duration="240" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://127.0.0.1:9000/Chapter15/topic/delete/-1"/>
+                <parameter name="nested text" value="topic/delete/-1"/>
+                <resultFile name="011_response_invoke.html"/>
+                <htmlparser>
+                    <error col="63" line="4" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                    <error col="92" line="5" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                    <error col="68" line="13" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                    <error col="85" line="15" url="http://127.0.0.1:9000/Chapter15/topic/list">Missing attribute name.</error>
+                </htmlparser>
+            </step>
+            <step duration="0" result="completed" taskName="verifyText">
+                <parameter name="nested text" value="Topic not found with id -1"/>
+            </step>
+        </results>
+    </testresult>
+</summary>

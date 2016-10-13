@@ -1,0 +1,9 @@
+//registration .template file
+From: $fromEmail
+To: $toEmail
+Dear $name,
+Please click on the following URL to activate your account:
+${link}
+Thanks,
+$signature
+<%= new java.text.SimpleDateFormat("MM-dd-yyyy").format(new Date()) %>
